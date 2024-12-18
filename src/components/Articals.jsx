@@ -33,16 +33,16 @@ export default function Articles() {
         {articlesData.map((article) => (
           <div
             key={article.id}
-            className="flex flex-col items-center text-left  shadow-md rounded-lg p-2  md:w-[333px]  max-w-[320px] lg:max-w-[305px] lx:maz-w-[380px] bg-white"
+            className="flex flex-col items-center text-left  shadow-md rounded-lg p-2  md:w-[333px]  max-w-[380px] lg:max-w-[305px] lx:maz-w-[380px] bg-white"
           >
             {/* Image */}
-            <div className="h-[250px] lx:w-[375px] lg:w-[300px] md:w-[333px] relative overflow-hidden">
+            <div className="h-[250px] w-[370px] lx:w-[375px] lg:w-[300px] md:w-[333px] relative overflow-hidden">
               <Image
                 src={article.image}
                 alt={article.title}
                 layout="fill"
                 objectFit="cover"
-                className="rounded-t-lg"
+                className="rounded-t-lg hover:scale-150 hover:-translate-x-1 transition-transform duration-700 hover:border-2 hover:cursor-pointer hover:scale-110 border-w1"
               />
             </div>
 

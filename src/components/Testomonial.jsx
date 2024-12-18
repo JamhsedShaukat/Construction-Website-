@@ -4,12 +4,12 @@ import { user2,user3,user4,user5,user6 } from "../../public/as/assets";
 export default function Testomonial() {
   return (
     <section className=" mx-auto px-6 py-12 lg:flex lg:items-center flex-col bg-[#E6F0F4]">
-      <div className="container flex flex-col justify-center items-center mx-auto">
+      <div className="container flex flex-col justify-center items-center mx-auto px-[40px]">
         <h1 className="text-4xl text-center font-bold text-main py-5">
           Few Words From Our Clients
         </h1>
-
-        <p className="bg-w1 p-6 w-[400px] sm:w-[450px] md:w-[600px]  ">
+       <div className="max-w-[700px] bg-w1">
+        <p className="px-8 py-4">
           We had an incredible experience working with them and were impressed
           they made such a big difference in only three weeks. Our team is so
           grateful for the wonderful improvements they made and their ability to
@@ -18,12 +18,14 @@ export default function Testomonial() {
           product.
         </p>
 
-        <div className="flex flex-row justtify-center items-center gap-4 sm:gap-6 md:gap-16 pt-12 ">
+       </div>
+
+        <div className="flex flex-row justtify-center items-center gap-4 sm:gap-6 md:gap-16 pt-12 flex-wrap ">
         <div className="flex items-center space-x-2 p-4 bg-transparent rounded-lg  ">
           <Image
             src={user2}
             alt="User 1"
-            className="w-14 h-14 rounded-full object-cover"
+            className="w-14 h-14 rounded-full object-cover border-sky-200 border-2 animation-all duration-200 hover:border-sky-400 transition-transform hover:scale-110 "
           />
 
           <div>
